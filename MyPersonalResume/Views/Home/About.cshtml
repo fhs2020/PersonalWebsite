@@ -1,128 +1,194 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<br />
-<div id="flipbook" style="text-align: center; background-color: lightblue; height: 75px; border-radius: 10px;">
-    <div>&nbsp;</div>
-    <h3>
-        FLAVIO HENRIQUE DE SOUSA
-    </h3>
-    <div>&nbsp;</div>
-</div>
 
-<br />
-<div class="hard" style="text-align: center;">
-    <div><b>Objetivo</b></div>
 
-    <div>Analista de TI, Programador web C# full stack</div>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+             border-radius: 10px;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+             border-radius: 10px;
+        }
+
+        .flip-card-front {
+            background-color: lightblue;
+            color: black;
+           border-radius: 10px;
+        }
+
+        .flip-card-back {
+            background-color: lightblue;
+            color: white;
+            border-radius: 10px;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="flip-card" style="width:500px; width: 50%; margin: 0 auto;">
+        <div class="flip-card-inner" style="">
+
+            <div class="flip-card-front">
+                <h1>Flavio Henrique de Sousa</h1>
+                <p>Desenvolvedor C# .Net</p>
+                <p>Trabalhador, alegre, e pontual!</p>
+            </div>
+            <div class="flip-card-back">
+                <img src="~/Content/img_avatar.jpg" style="width:300px;height:300px;" />
+            </div>
+
+        </div>
+    </div>
+
     <br />
-    <div><b>Competências-chave</b></div>
+    <div style="text-align: center;">
+        <div><b>Objetivo</b></div>
 
-    <div class="hard">
-        Pessoa positiva, gosto de trabalhar em equipe
+        <div>Analista de TI, Programador web C# full stack</div>
+       <br />
+        https://github.com/fhs2020
+
         <br />
-        Linguagem: Inglês, Português, Espanhol
         <br />
-        Responsável no trabalho, trabalhador e confiável
+        <div><b>Competências-chave</b></div>
+
+        <div class="hard">
+            Pessoa positiva, gosto de trabalhar em equipe
+            <br />
+            Linguagem: Inglês, Português, Espanhol
+            <br />
+            Responsável no trabalho, trabalhador e confiável
+            <br />
+            Auto motivado e orientado para chegar à frente e crescer dentro da empresa
+        </div>
         <br />
-        Auto motivado e orientado para chegar à frente e crescer dentro da empresa
+
+        <div><b>Educação</b></div>
+        <br />
+        <div>Heald College, Concord, CA 1998 - 2001</div>
+        <div>Information technology</div>
+        <div>
+            Fundamentos da Tecnologia da informação, Computer hardware technologies, Windows Network administrator, Linux System Administrator, Network Defense, Software Applications, Visual basic, Computer and Network Security, Fundamentals English and Math Skills.
+        </div>
+        <br />
+
+        <div> Senac, Goiânia, GO 2010 - 2011</div>
+        <div>Curso técnico de Segurança de redes Windows e Linux</div>
+        <br />
+
+        <div>Uni Anhanguera, Goiânia, GO 2012 – 2015</div>
+        <div>Análise e Desenvolvimento de Sistemas</div>
+        <div> Algoritmos e Estrutura de Dados, Redes de Computadores, Arquitetura de Computadores, Banco de Dados, Programação orientado objetos, Programação para WEB, Análise e Projeto de Sistemas, Sistemas Operacionais, Engenharia de Requisitos, Qualidade de Software, Gerência de projetos, Sistemas Distribuídos, Projeto e Arquitetura de Software, Manutenção de software.</div>
+        <br />
+
+        <div> UFG, Goiânia, GO 2017 - 2018</div>
+        <div> Especialização de Banco de dados</div>
+        <div> Conhecimento de tecnologias de última geração em Banco de Dados. Desenvolvimento e controle de administração em projetos de Banco de Dados. Programação Orientada a Objetos Java. Banco de dados Oracle, MySQL, SQL Server, PostgreSQL. Apresentações de projetos.</div>
+        <br />
+
+        <div><b>Qualificações</b></div>
+        <br />
+        <div>Desenvolvedor em linguagem Java, C, C# MVC, PHP, JavaScript, JQuery,  SQL, manutenção e implementação em servidores Windows e Linux.</div>
+        <br />
+
+        <div class="hard"><b>Experiência</b></div>
+        <br />
+        <div>Inbrateve - Instituto Brasileiro de Tecnologia Veicular, Goiânia, GO Março de 2017 - Fevereiro - 2019</div>
+        <div>Programador C#, Java, CSS, Bootstrap, Javascript, HTML, Razor, planejamento de projetos</div>
+        <div>Responsável por liderar a equipe de desenvolvimento para desenvolvimento de sites e sistemas web relacionados às necessidades da empresa. Levantamento de requisitos, compartilhamento de conhecimento com a equipe de TI. Configuração de servidores cloud. Testes de software. Suporte de hardware, e redes. Marketing digital. Criação de websites para diferentes setores da empresa. Planejamento de negócios e novas soluções.</div>
+        <br />
+
+        <div> Ponto iD Tecnologia, Goiânia, GO Outubro de 2015 - Fevereiro 2017</div>
+        <div>Programador .Net C#, JavaScript, Entity Framework, CSS, HTML5, AJAX</div>
+        <div>Responsável por criar aplicações web com arquitetura multi tenant, modelo DDD, MVC. Usando banco de dados MySQL, SQL Server, Entity Framework, RavenDB, JavaScript e técnica AJAX. Manutenção e melhorias em sistemas web existentes na empresa. Testes. Comunicação entre o departamento de suporte e equipe de desenvolvimento. Responsável por backup dos bancos de dados na Azure e na 001hosting. Responsável por novas publicações de novas versões do sistema no servidor de teste e servidores de produção. Programação orientado objetos usando C# e JavaScript. Levantamento de requisitos.</div>
+        <br />
+
+        <div>Call Tecnologia, Goiânia, GO Fevereiro de 2015 - Outubro de 2015</div>
+        <div> Programador C#, JavaScript, SQL Server, Bootstrap, CSS, HTML</div>
+        <div> Responsável por trabalhar no front end criando sites para clientes, e também no back end em sistemas para sindicatos. Uso de ferramentas Visual Studio e Umbraco.</div>
+
+        <div>DataRey Informática, Goiânia, GO Outubro de 2014  - Fevereiro de 2015</div>
+        <div>Programador Java/Flex</div>
+        <div>Responsabilidades: Desenvolvimento do sistema usando ferramentas Eclipse, Java, Spring, Hibernate, PostgreSQL, Flex na camada de visão.</div>
+        <br />
+
+        <div>GAE Construtora, Goiânia, GO Setembro de 2013  - Setembro de 2014</div>
+        <div> Suporte Sistema RM TOTVs</div>
+        <div>Responsável pelo sistema de atendimento Agilis</div>
+        <div>Atendimento de suporte Nível 2 e 3 abrangendo soluções de redes, servidores e infraestrutura. Testes com novos produtos e soluções.</div>
+        <br />
+
+        <div>WayTaxi, Goiânia, GO  Fevereiro de 2012 – Agosto de 2013</div>
+        <div>Desenvolvedor Web</div>
+        <div>Responsável por desenvolver novo web site da companhia usando WordPress, HTML, PHP, CSS, BootStrap, e JavaScript</div>
+        <br />
+
+        <div>Info Tech, Goiânia, GO Fevereiro de 2010 – Agosto de 2013</div>
+        <div>Administrador de redes</div>
+        <div>Responsável pela administração de servidores e rede. Monitoramento de recursos de rede e servidores, Instalações e configurações de estações</div>
+        <br />
+
+        <div>AT&T,  South San Francisco, CA USA Janeiro de 2008 até Junho de 2010</div>
+        <div>Marketing/vendas</div>
+        <div>Ajudei a promover as vendas dos novos produtos wireless da AT&T com o primeiro modelo de Iphone e blackberry. Suporte tecnico a clientes.</div>
+        <br />
+
+        <div>Wells Fargo Bank  Concord, CA USA  Julho de 2005 até Dezembro de 2007</div>
+        <div> Analista de Sistemas</div>
+        <div>Atividades: Reuniões com usuários e colegas de trabalho; Manutenção de páginas e sistemas em Java, desenvolvimento, otimização, implantação, teste, desenvolvimento de relatórios , manipulação e administração de dados via SQL, criptografia de dados.</div>
+        <div>Wells Fargo Bank,  Concord, CA USA Junho de 1998 até Junho de 2005</div>
+        <div>Online Banking Suporte</div>
+        <div>Suporte técnico de terceiro nível aos clientes do banco Wells Fargo para resolver problemas sobre o serviço de online banking. Também resolvendo problemas de acesso e como usar o sistema / serviços de online banking.</div>
+        <br />
+
+        <div class="hard"><b>Interesses</b></div>
+        <br />
+        <div>
+            Família,
+            Livros de Programação & Tecnologia, Vendas, Marketing Digital,
+            Musica
+        </div>
+        <div>
+            Programação C#, SQL, Logica, NoSQL, Angular JS,
+            Redes de Comunicação, Linux Ubuntu, Mint, Iptables, Tecnologia, Esportes, Filmes.
+        </div>
+        <br />
+
     </div>
     <br />
 
-    <div><b>Educação</b></div>
-    <br />
-    <div>Heald College, Concord, CA 1998 - 2001</div>
-    <div>Information technology</div>
-    <div>
-        Fundamentos da Tecnologia da informação, Computer hardware technologies, Windows Network administrator, Linux System Administrator, Network Defense, Software Applications, Visual basic, Computer and Network Security, Fundamentals English and Math Skills.
-    </div>
-    <br />
 
-    <div> Senac, Goiânia, GO 2010 - 2011</div>
-    <div>Curso técnico de Segurança de redes Windows e Linux</div>
-    <br />
-
-    <div>Uni Anhanguera, Goiânia, GO 2012 – 2015</div>
-    <div>Análise e Desenvolvimento de Sistemas</div>
-    <div> Algoritmos e Estrutura de Dados, Redes de Computadores, Arquitetura de Computadores, Banco de Dados, Programação orientado objetos, Programação para WEB, Análise e Projeto de Sistemas, Sistemas Operacionais, Engenharia de Requisitos, Qualidade de Software, Gerência de projetos, Sistemas Distribuídos, Projeto e Arquitetura de Software, Manutenção de software.</div>
-    <br />
-
-    <div> UFG, Goiânia, GO 2017 - 2018</div>
-    <div> Especialização de Banco de dados</div>
-    <div> Conhecimento de tecnologias de última geração em Banco de Dados. Desenvolvimento e controle de administração em projetos de Banco de Dados. Programação Orientada a Objetos Java. Banco de dados Oracle, MySQL, SQL Server, PostgreSQL. Apresentações de projetos.</div>
-    <br />
-
-    <div><b>Qualificações</b></div>
-    <br />
-    <div>Desenvolvedor em linguagem Java, C, C# MVC, PHP, JavaScript, JQuery,  SQL, manutenção e implementação em servidores Windows e Linux.</div>
-    <br />
-
-    <div class="hard"><b>Experiência</b></div>
-    <br />
-    <div>Inbrateve - Instituto Brasileiro de Tecnologia Veicular, Goiânia, GO Março de 2017 - Fevereiro - 2019</div>
-    <div>Programador C#, Java, CSS, Bootstrap, Javascript, HTML, Razor, planejamento de projetos</div>
-    <div>Responsável por liderar a equipe de desenvolvimento para desenvolvimento de sites e sistemas web relacionados às necessidades da empresa. Levantamento de requisitos, compartilhamento de conhecimento com a equipe de TI. Configuração de servidores cloud. Testes de software. Suporte de hardware, e redes. Marketing digital. Criação de websites para diferentes setores da empresa. Planejamento de negócios e novas soluções.</div>
-    <br />
-
-    <div> Ponto iD Tecnologia, Goiânia, GO Outubro de 2015 - Fevereiro 2017</div>
-    <div>Programador .Net C#, JavaScript, Entity Framework, CSS, HTML5, AJAX</div>
-    <div>Responsável por criar aplicações web com arquitetura multi tenant, modelo DDD, MVC. Usando banco de dados MySQL, SQL Server, Entity Framework, RavenDB, JavaScript e técnica AJAX. Manutenção e melhorias em sistemas web existentes na empresa. Testes. Comunicação entre o departamento de suporte e equipe de desenvolvimento. Responsável por backup dos bancos de dados na Azure e na 001hosting. Responsável por novas publicações de novas versões do sistema no servidor de teste e servidores de produção. Programação orientado objetos usando C# e JavaScript. Levantamento de requisitos.</div>
-    <br />
-
-    <div>Call Tecnologia, Goiânia, GO Fevereiro de 2015 - Outubro de 2015</div>
-    <div> Programador C#, JavaScript, SQL Server, Bootstrap, CSS, HTML</div>
-    <div> Responsável por trabalhar no front end criando sites para clientes, e também no back end em sistemas para sindicatos. Uso de ferramentas Visual Studio e Umbraco.</div>
-
-    <div>DataRey Informática, Goiânia, GO Outubro de 2014  - Fevereiro de 2015</div>
-    <div>Programador Java/Flex</div>
-    <div>Responsabilidades: Desenvolvimento do sistema usando ferramentas Eclipse, Java, Spring, Hibernate, PostgreSQL, Flex na camada de visão.</div>
-    <br />
-
-    <div>GAE Construtora, Goiânia, GO Setembro de 2013  - Setembro de 2014</div>
-    <div> Suporte Sistema RM TOTVs</div>
-    <div>Responsável pelo sistema de atendimento Agilis</div>
-    <div>Atendimento de suporte Nível 2 e 3 abrangendo soluções de redes, servidores e infraestrutura. Testes com novos produtos e soluções.</div>
-    <br />
-
-    <div>WayTaxi, Goiânia, GO  Fevereiro de 2012 – Agosto de 2013</div>
-    <div>Desenvolvedor Web</div>
-    <div>Responsável por desenvolver novo web site da companhia usando WordPress, HTML, PHP, CSS, BootStrap, e JavaScript</div>
-    <br />
-
-    <div>Info Tech, Goiânia, GO Fevereiro de 2010 – Agosto de 2013</div>
-    <div>Administrador de redes</div>
-    <div>Responsável pela administração de servidores e rede. Monitoramento de recursos de rede e servidores, Instalações e configurações de estações</div>
-    <br />
-
-    <div>AT&T,  South San Francisco, CA USA Janeiro de 2008 até Junho de 2010</div>
-    <div>Marketing/vendas</div>
-    <div>Ajudei a promover as vendas dos novos produtos wireless da AT&T com o primeiro modelo de Iphone e blackberry. Suporte tecnico a clientes.</div>
-    <br />
-
-    <div>Wells Fargo Bank  Concord, CA USA  Julho de 2005 até Dezembro de 2007</div>
-    <div> Analista de Sistemas</div>
-    <div>Atividades: Reuniões com usuários e colegas de trabalho; Manutenção de páginas e sistemas em Java, desenvolvimento, otimização, implantação, teste, desenvolvimento de relatórios , manipulação e administração de dados via SQL, criptografia de dados.</div>
-    <div>Wells Fargo Bank,  Concord, CA USA Junho de 1998 até Junho de 2005</div>
-    <div>Online Banking Suporte</div>
-    <div>Suporte técnico de terceiro nível aos clientes do banco Wells Fargo para resolver problemas sobre o serviço de online banking. Também resolvendo problemas de acesso e como usar o sistema / serviços de online banking.</div>
-    <br />
-
-    <div class="hard"><b>Interesses</b></div>
-    <br />
-    <div>
-        Família,
-        Livros de Programação & Tecnologia, Vendas, Marketing Digital,
-        Musica
-    </div>
-    <div>
-        Programação C#, SQL, Logica, NoSQL, Angular JS,
-        Redes de Comunicação, Linux Ubuntu, Mint, Iptables, Tecnologia, Esportes, Filmes.
-    </div>
-    <br />
-
-</div>
-<br />
-
-
- 
- 
+</body>
+</html>
